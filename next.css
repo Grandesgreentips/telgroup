@@ -1,0 +1,66 @@
+/* next.css */
+
+/* Basic reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh; /* Reduced height */
+    background-color: #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    width: 100%; /* Reduced width */
+    max-width: 500px; /* Adjust as needed */
+    margin: auto;
+}
+img {
+    width: 600px;
+}
+
+.content {
+    text-align: center;
+}
+
+.telegram-logo img {
+    width: 300px; /* Adjust size */
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.message p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        max-width: 200px; /* Further reduce for mobile */
+    }
+
+    .telegram-logo img {
+        width: 200px; /* Adjust size for mobile */
+    }
+
+    .message p {
+        font-size: 13px;
+    }
+}
